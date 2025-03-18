@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akansha Rawat - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        h2 {
+            border-bottom: 2px solid #0056b3;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.8em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+        #scrollToTop:hover {
+            background: #003d80;
+        }
+        .mindmap {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .mindmap img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Akansha Rawat - Portfolio
+    </header>
+    
+    <div class="container">
+        <h1>About Me</h1>
+        <p><strong>From:</strong> Kotdwar, Uttarakhand</p>
+        <p><strong>Education:</strong> BSc Hons Microbiology, Dev Bhoomi Uttarakhand University</p>
+        <p>I am a dedicated and adaptable individual with a strong work ethic and a passion for learning. I enjoy reading books and cooking in my spare time, which helps me stay refreshed and inspired. My goal is to grow, connect, and make a meaningful impact in every aspect of my life.</p>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>Strong laboratory technique proficiency</li>
+            <li>Data analysis</li>
+            <li>Problem-solving</li>
+            <li>Decision-making</li>
+        </ul>
+        
+        <h2>Strengths</h2>
+        <ul>
+            <li>Confident</li>
+            <li>Hardworking</li>
+            <li>Time management</li>
+            <li>Teamwork</li>
+            <li>Motivated</li>
+            <li>Leadership</li>
+            <li>Courageous</li>
+        </ul>
+        
+        <h2>Interests</h2>
+        <ul>
+            <li>Behavioral analysis</li>
+            <li>Cooking</li>
+            <li>Reading books</li>
+        </ul>
+        
+        <div class="mindmap">
+            <h2>Mind Map</h2>
+            <img src="IMAGE.png" alt="Mind Map">
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Akansha Rawat. All Rights Reserved.
+    </footer>
+    
+    <button id="scrollToTop" onclick="scrollToTop()">⬆</button>
+    
+    <script>
+        window.onscroll = function() {
+            let button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+        
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
